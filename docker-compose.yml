@@ -1,0 +1,11 @@
+mongodb:
+  image: frodenas/mongodb
+  ports:
+    - 27017:27017
+  environment:
+    - MONGODB_USERNAME=dennis
+    - MONGODB_PASSWORD=changeit
+    - MONGODB_DBNAME=Employeess
+  volumes:
+    - ./tmp/mongodb:/data
+  command: --smallfiles --journal
