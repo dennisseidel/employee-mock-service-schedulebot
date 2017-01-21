@@ -1,0 +1,37 @@
+{
+  "name": "employee-mock-service",
+  "version": "1.0.0",
+  "description": "mock that serves and stores employee data",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "lodash": "^4.17.4",
+    "mongodb": "^2.2.19",
+    "mongoose": "^4.7.6"
+  },
+  "devDependencies": {
+    "eslint": "^3.12.2",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.8.0",
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
+    "nodemon": "^1.11.0",
+    "supertest": "^2.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dennisseidel/employee-mock-service-schedulebot.git"
+  },
+  "author": "Dennis Seidel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dennisseidel/employee-mock-service-schedulebot/issues"
+  },
+  "homepage": "https://github.com/dennisseidel/employee-mock-service-schedulebot#readme"
+}
