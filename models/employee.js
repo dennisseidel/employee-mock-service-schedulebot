@@ -25,7 +25,7 @@ const Employee = mongoose.model('Employee', {
     required: true,
   },
   nonAvailablility: {
-    type: Array,
+    type: Object,
   },
 });
 

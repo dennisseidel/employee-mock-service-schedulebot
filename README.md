@@ -22,8 +22,18 @@ The Employee Object contains:
   },
   // could be replaced with a link to a calender system
   "non-availablility": [{
-    "start": 2017-10-30 T 10:00 UTC,
-    "end": 2017-10-30 T 11:00 UTC
+    "2017-10-30": [
+      {
+        "start": 2017-10-30 T 10:00 UTC,
+        "end": 2017-10-30 T 11:00 UTC,
+        "content": "important meeting title"
+      },
+      {
+        "start": 2017-10-30 T 11:00 UTC,
+        "end": 2017-10-30 T 12:00 UTC,
+        "content": "important meeting title"
+      },
+    ]
   },
   {
     "start": 2017-10-30 T 10:00 UTC,
