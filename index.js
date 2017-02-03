@@ -12,7 +12,7 @@ const { Employee } = require('./models/employee');
 // config your app
 // get the app environment from Cloud Foundry
 const appEnv = cfenv.getAppEnv();
-if (typeof appEnv !== 'undefined') process.env.PORT = appEnv.port;
+if (!appEnv.isLocal) process.env.PORT = appEnv.port;
 
 const port = process.env.PORT || 3001;
 const app = express();
