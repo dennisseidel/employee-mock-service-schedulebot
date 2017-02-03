@@ -32,6 +32,9 @@
     "type": "git",
     "url": "git+https://github.com/dennisseidel/employee-mock-service-schedulebot.git"
   },
+  "engines": {
+    "node": "7.4.0"
+  },
   "author": "Dennis Seidel",
   "license": "ISC",
   "bugs": {
