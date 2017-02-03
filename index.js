@@ -2,9 +2,17 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const moment = require('moment');
+// cfenv provides access to your Cloud Foundry environment
+// for more info, see: https://www.npmjs.com/package/cfenv
+const cfenv = require('cfenv');
 
 const { mongoose } = require('./db/mongoose');
 const { Employee } = require('./models/employee');
+
+// config your app
+// get the app environment from Cloud Foundry
+const appEnv = cfenv.getAppEnv();
+if (typeof appEnv !== 'undefined') process.env.PORT = appEnv.port;
 
 const port = process.env.PORT || 3001;
 const app = express();
@@ -47,6 +55,6 @@ app.post('/employees', (req, res) => {
   });
 });
 
-app.listen(port, () => {
+app.listen(port, '0.0.0.0', () => {
   console.log(`Server is listening to port ${port}`);
 });
